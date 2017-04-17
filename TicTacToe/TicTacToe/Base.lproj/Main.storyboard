@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Si3-w0-23Z">
+                                <rect key="frame" x="16" y="234" width="343" height="343"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9q-dV-EFH" userLabel="HorizontalLine1">
+                                        <rect key="frame" x="0.0" y="115" width="343" height="2"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="Yvu-cA-jRK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVz-na-gh0" userLabel="HorizontalLine2">
+                                        <rect key="frame" x="0.0" y="229" width="343" height="2"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="DEs-Ca-IyX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ont-ty-0wC" userLabel="VerticalLine1">
+                                        <rect key="frame" x="115" y="8" width="2" height="327"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="2" id="iZN-z0-A7k"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tjo-VO-SmC" userLabel="VerticalLine2">
+                                        <rect key="frame" x="229" y="8" width="2" height="327"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="2" id="0PV-nA-GsW"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uG9-YL-vjC" userLabel="Tile1" customClass="Tile" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="8" width="99" height="99"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playersMoveWithTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24e-kG-WZa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bed-pC-WCs" userLabel="Tile2" customClass="Tile" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="122" y="8" width="99" height="99"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playersMoveWithTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GQ-lq-q0R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS3-qm-V99" userLabel="Tile3" customClass="Tile" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="239" y="8" width="99" height="99"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playersMoveWithTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyS-6j-On8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaK-eB-40T" userLabel="Tile4" customClass="Tile" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="122" width="99" height="99"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playersMoveWithTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="daB-le-zeQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-bD-c1R" userLabel="Tile5" customClass="Tile" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="122" y="122" width="99" height="99"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playersMoveWithTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4PY-aa-puV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vft-Gt-0p5" userLabel="Tile6" customClass="Tile" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="239" y="122" width="99" height="99"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playersMoveWithTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kzi-Bd-gEI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38q-JV-c2L" userLabel="Tile7" customClass="Tile" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="239" width="99" height="99"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playersMoveWithTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rg-iA-UJn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxj-tb-SWV" userLabel="Tile8" customClass="Tile" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="122" y="239" width="99" height="99"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playersMoveWithTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vW1-7x-fBe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgd-hy-xeE" userLabel="Tile9" customClass="Tile" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="239" y="239" width="99" height="99"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playersMoveWithTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fn8-d9-oaq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Fxj-tb-SWV" secondAttribute="bottom" constant="5" id="1Xq-mm-r4t"/>
+                                    <constraint firstItem="Vft-Gt-0p5" firstAttribute="leading" secondItem="Tjo-VO-SmC" secondAttribute="trailing" constant="8" id="2iJ-jA-ZFc"/>
+                                    <constraint firstItem="Kgd-hy-xeE" firstAttribute="top" secondItem="dVz-na-gh0" secondAttribute="bottom" constant="8" id="4rL-z5-2sF"/>
+                                    <constraint firstItem="Ont-ty-0wC" firstAttribute="leading" secondItem="38q-JV-c2L" secondAttribute="trailing" constant="8" id="5iA-yk-fqp"/>
+                                    <constraint firstItem="QS3-qm-V99" firstAttribute="height" secondItem="Si3-w0-23Z" secondAttribute="height" multiplier="0.28863" id="68l-zC-n0c"/>
+                                    <constraint firstItem="Fxj-tb-SWV" firstAttribute="top" secondItem="dVz-na-gh0" secondAttribute="bottom" constant="8" id="6CR-jw-QTm"/>
+                                    <constraint firstItem="uG9-YL-vjC" firstAttribute="height" secondItem="Si3-w0-23Z" secondAttribute="height" multiplier="0.28863" id="7Lx-MC-F3S"/>
+                                    <constraint firstItem="Tjo-VO-SmC" firstAttribute="leading" secondItem="Bed-pC-WCs" secondAttribute="trailing" constant="8" id="7i6-Bh-aog"/>
+                                    <constraint firstItem="qaK-eB-40T" firstAttribute="leading" secondItem="Si3-w0-23Z" secondAttribute="leading" constant="8" id="C79-8n-koT"/>
+                                    <constraint firstItem="dVz-na-gh0" firstAttribute="top" secondItem="qaK-eB-40T" secondAttribute="bottom" constant="8" id="Ctp-5O-Nzl"/>
+                                    <constraint firstItem="Ont-ty-0wC" firstAttribute="leading" secondItem="qaK-eB-40T" secondAttribute="trailing" constant="8" id="DYJ-lh-vby"/>
+                                    <constraint firstItem="qaK-eB-40T" firstAttribute="top" secondItem="O9q-dV-EFH" secondAttribute="bottom" constant="5" id="Edf-uv-aDi"/>
+                                    <constraint firstItem="O9q-dV-EFH" firstAttribute="top" secondItem="QS3-qm-V99" secondAttribute="bottom" constant="8" id="FUJ-W2-7Vc"/>
+                                    <constraint firstAttribute="bottom" secondItem="38q-JV-c2L" secondAttribute="bottom" constant="5" id="Ihu-37-fOu"/>
+                                    <constraint firstItem="QS3-qm-V99" firstAttribute="leading" secondItem="Tjo-VO-SmC" secondAttribute="trailing" constant="8" id="ItD-Pu-WsH"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kgd-hy-xeE" secondAttribute="bottom" constant="5" id="JY5-76-cfq"/>
+                                    <constraint firstItem="qGb-bD-c1R" firstAttribute="leading" secondItem="Ont-ty-0wC" secondAttribute="trailing" constant="5" id="Knz-gp-FYm"/>
+                                    <constraint firstItem="38q-JV-c2L" firstAttribute="top" secondItem="dVz-na-gh0" secondAttribute="bottom" constant="8" id="N7I-3L-woA"/>
+                                    <constraint firstItem="Tjo-VO-SmC" firstAttribute="leading" secondItem="qGb-bD-c1R" secondAttribute="trailing" constant="8" id="P2T-Fi-Jyz"/>
+                                    <constraint firstItem="dVz-na-gh0" firstAttribute="top" secondItem="Vft-Gt-0p5" secondAttribute="bottom" constant="8" id="PCp-mX-Ak3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vft-Gt-0p5" secondAttribute="trailing" constant="5" id="S86-Ks-mnn"/>
+                                    <constraint firstItem="38q-JV-c2L" firstAttribute="leading" secondItem="Si3-w0-23Z" secondAttribute="leading" constant="8" id="ScX-q0-e4p"/>
+                                    <constraint firstItem="O9q-dV-EFH" firstAttribute="top" secondItem="uG9-YL-vjC" secondAttribute="bottom" constant="8" id="WsX-65-Ef4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kgd-hy-xeE" secondAttribute="trailing" constant="5" id="XNW-k0-Nmu"/>
+                                    <constraint firstItem="dVz-na-gh0" firstAttribute="top" secondItem="qGb-bD-c1R" secondAttribute="bottom" constant="8" id="XQ5-YH-4ml"/>
+                                    <constraint firstItem="qaK-eB-40T" firstAttribute="width" secondItem="Si3-w0-23Z" secondAttribute="width" multiplier="0.28863" id="YAr-un-s5K"/>
+                                    <constraint firstItem="Bed-pC-WCs" firstAttribute="height" secondItem="Si3-w0-23Z" secondAttribute="height" multiplier="0.28863" id="ao6-7Q-z7o"/>
+                                    <constraint firstItem="Ont-ty-0wC" firstAttribute="top" secondItem="Si3-w0-23Z" secondAttribute="top" constant="8" id="clP-wC-xZC"/>
+                                    <constraint firstItem="dVz-na-gh0" firstAttribute="leading" secondItem="Si3-w0-23Z" secondAttribute="leading" id="ebv-yE-n0T"/>
+                                    <constraint firstItem="uG9-YL-vjC" firstAttribute="width" secondItem="Si3-w0-23Z" secondAttribute="width" multiplier="0.28863" id="fWX-iM-pyR"/>
+                                    <constraint firstItem="Fxj-tb-SWV" firstAttribute="leading" secondItem="Ont-ty-0wC" secondAttribute="trailing" constant="5" id="gdr-dn-wVL"/>
+                                    <constraint firstItem="Bed-pC-WCs" firstAttribute="top" secondItem="Si3-w0-23Z" secondAttribute="top" constant="8" id="ijm-rQ-e2f"/>
+                                    <constraint firstItem="Ont-ty-0wC" firstAttribute="leading" secondItem="uG9-YL-vjC" secondAttribute="trailing" constant="8" id="jOU-Tt-Hpf"/>
+                                    <constraint firstItem="Bed-pC-WCs" firstAttribute="width" secondItem="Si3-w0-23Z" secondAttribute="width" multiplier="0.28863" id="kK3-aQ-OUe"/>
+                                    <constraint firstItem="Vft-Gt-0p5" firstAttribute="top" secondItem="O9q-dV-EFH" secondAttribute="bottom" constant="5" id="kdO-7f-fcx"/>
+                                    <constraint firstItem="qaK-eB-40T" firstAttribute="height" secondItem="Si3-w0-23Z" secondAttribute="height" multiplier="0.28863" id="lvJ-s6-8Zf"/>
+                                    <constraint firstItem="Kgd-hy-xeE" firstAttribute="leading" secondItem="Tjo-VO-SmC" secondAttribute="trailing" constant="8" id="mdh-gx-1hV"/>
+                                    <constraint firstItem="qGb-bD-c1R" firstAttribute="top" secondItem="O9q-dV-EFH" secondAttribute="bottom" constant="5" id="oKi-vm-Tx5"/>
+                                    <constraint firstItem="O9q-dV-EFH" firstAttribute="top" secondItem="Bed-pC-WCs" secondAttribute="bottom" constant="8" id="qfe-2s-Yj1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ont-ty-0wC" secondAttribute="bottom" constant="8" id="r69-aM-dnm"/>
+                                    <constraint firstAttribute="trailing" secondItem="dVz-na-gh0" secondAttribute="trailing" id="sZE-oA-3CF"/>
+                                    <constraint firstItem="Tjo-VO-SmC" firstAttribute="top" secondItem="Si3-w0-23Z" secondAttribute="top" constant="8" id="sZx-Zn-hmd"/>
+                                    <constraint firstItem="O9q-dV-EFH" firstAttribute="leading" secondItem="Si3-w0-23Z" secondAttribute="leading" id="t7D-or-ANp"/>
+                                    <constraint firstItem="Bed-pC-WCs" firstAttribute="leading" secondItem="Ont-ty-0wC" secondAttribute="trailing" constant="5" id="tbs-4B-UH6"/>
+                                    <constraint firstAttribute="trailing" secondItem="O9q-dV-EFH" secondAttribute="trailing" id="teg-fS-C4h"/>
+                                    <constraint firstItem="Tjo-VO-SmC" firstAttribute="leading" secondItem="Fxj-tb-SWV" secondAttribute="trailing" constant="8" id="vto-Zu-nOf"/>
+                                    <constraint firstItem="QS3-qm-V99" firstAttribute="width" secondItem="Si3-w0-23Z" secondAttribute="width" multiplier="0.28863" id="z9I-qV-nfI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tjo-VO-SmC" secondAttribute="bottom" constant="8" id="zc2-vk-jVc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRm-Kz-nEp">
+                                <rect key="frame" x="112" y="617" width="150" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.46608074824394374" blue="0.52678486281775094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8Hm-u0-7Bh"/>
+                                    <constraint firstAttribute="width" constant="150" id="Rpk-kg-jdj"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kle-LE-qRC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human's Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBE-1w-2Vi">
+                                <rect key="frame" x="16" y="61" width="121" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="d3n-3b-nyo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile's Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5V-jC-haa">
+                                <rect key="frame" x="16" y="90" width="118" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="Ch9-lE-B4C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7i-jg-b46">
+                                <rect key="frame" x="145" y="61" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tq9-UQ-Jjh">
+                                <rect key="frame" x="145" y="90" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your turn, Mr. Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="oYK-dc-WcS">
+                                <rect key="frame" x="16" y="191" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="t0V-aP-p1M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oYK-dc-WcS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="0ut-RU-EN9"/>
+                            <constraint firstItem="h5V-jC-haa" firstAttribute="leading" secondItem="yBE-1w-2Vi" secondAttribute="leading" id="5fL-zN-ChW"/>
+                            <constraint firstItem="tq9-UQ-Jjh" firstAttribute="leading" secondItem="h5V-jC-haa" secondAttribute="trailing" constant="11" id="6L4-Vg-yLn"/>
+                            <constraint firstItem="yBE-1w-2Vi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="73e-MR-DaB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b7i-jg-b46" secondAttribute="trailing" id="A7B-u2-nl9"/>
+                            <constraint firstItem="hRm-Kz-nEp" firstAttribute="top" secondItem="Si3-w0-23Z" secondAttribute="bottom" constant="40" id="IYb-WV-CUO"/>
+                            <constraint firstItem="Si3-w0-23Z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.914667" id="LfR-Fg-VzE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yBE-1w-2Vi" secondAttribute="leading" id="MEK-CZ-5Tg"/>
+                            <constraint firstItem="b7i-jg-b46" firstAttribute="top" secondItem="yBE-1w-2Vi" secondAttribute="top" id="QPU-rV-kKW"/>
+                            <constraint firstItem="tq9-UQ-Jjh" firstAttribute="bottom" secondItem="h5V-jC-haa" secondAttribute="bottom" id="Qnf-7c-JHf"/>
+                            <constraint firstItem="b7i-jg-b46" firstAttribute="bottom" secondItem="yBE-1w-2Vi" secondAttribute="bottom" id="a9e-Ho-gZI"/>
+                            <constraint firstItem="h5V-jC-haa" firstAttribute="top" secondItem="yBE-1w-2Vi" secondAttribute="bottom" constant="8" id="cfK-qi-LBN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hRm-Kz-nEp" secondAttribute="bottom" constant="20" id="eJC-kM-qen"/>
+                            <constraint firstAttribute="trailing" secondItem="oYK-dc-WcS" secondAttribute="trailing" constant="16" id="kj2-6S-SZN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tq9-UQ-Jjh" secondAttribute="trailing" id="len-JR-mve"/>
+                            <constraint firstItem="Si3-w0-23Z" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.514243" id="oUX-C3-D9N"/>
+                            <constraint firstItem="hRm-Kz-nEp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rxn-9j-1Lr"/>
+                            <constraint firstItem="Si3-w0-23Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vqk-M6-F0z"/>
+                            <constraint firstItem="Si3-w0-23Z" firstAttribute="top" secondItem="oYK-dc-WcS" secondAttribute="bottom" constant="8" id="wua-a7-rpd"/>
+                            <constraint firstItem="tq9-UQ-Jjh" firstAttribute="top" secondItem="h5V-jC-haa" secondAttribute="top" id="xUg-LA-5aK"/>
+                            <constraint firstItem="b7i-jg-b46" firstAttribute="leading" secondItem="yBE-1w-2Vi" secondAttribute="trailing" constant="8" id="zIi-dq-uh3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="humanScoreLabel" destination="b7i-jg-b46" id="oLU-cB-6SF"/>
+                        <outlet property="mobileScoreLabel" destination="tq9-UQ-Jjh" id="Uy6-hA-WYB"/>
+                        <outlet property="resetButton" destination="hRm-Kz-nEp" id="jQg-xA-8Kz"/>
+                        <outlet property="statusMessageLabel" destination="oYK-dc-WcS" id="65I-oi-1pR"/>
+                        <outletCollection property="allTiles" destination="uG9-YL-vjC" collectionClass="NSMutableArray" id="VO0-rv-WE0"/>
+                        <outletCollection property="allTiles" destination="qGb-bD-c1R" collectionClass="NSMutableArray" id="hAX-Fa-GqD"/>
+                        <outletCollection property="allTiles" destination="Bed-pC-WCs" collectionClass="NSMutableArray" id="KBB-KQ-NQj"/>
+                        <outletCollection property="allTiles" destination="QS3-qm-V99" collectionClass="NSMutableArray" id="CFU-lR-UoA"/>
+                        <outletCollection property="allTiles" destination="qaK-eB-40T" collectionClass="NSMutableArray" id="fOI-CF-2qj"/>
+                        <outletCollection property="allTiles" destination="qGb-bD-c1R" collectionClass="NSMutableArray" id="itC-L2-QBH"/>
+                        <outletCollection property="allTiles" destination="Vft-Gt-0p5" collectionClass="NSMutableArray" id="3oi-nO-Pdg"/>
+                        <outletCollection property="allTiles" destination="38q-JV-c2L" collectionClass="NSMutableArray" id="ZUB-DO-vFr"/>
+                        <outletCollection property="allTiles" destination="Fxj-tb-SWV" collectionClass="NSMutableArray" id="tQV-kc-6lh"/>
+                        <outletCollection property="allTiles" destination="Kgd-hy-xeE" collectionClass="NSMutableArray" id="slP-mP-DJc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151.19999999999999" y="114.69265367316342"/>
+        </scene>
+    </scenes>
+</document>
